@@ -1,6 +1,8 @@
 package de.neuefische.cgn221springstudent.repo;
 
 import de.neuefische.cgn221springstudent.model.Student;
+import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -8,7 +10,7 @@ import java.util.List;
 import java.util.Map;
 
 
-
+@Service
 public class StudentRepo {
     Map<String, Student> students = new HashMap<>();
 
